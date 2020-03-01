@@ -42,4 +42,6 @@ COPY . .
 RUN dos2unix /opt/data/entrypoint.sh
 RUN chmod +x /opt/data/entrypoint.sh
 
+RUN npm install @oracle/oraclejet-tooling --save
+
 ENV GATEWAY_SERVER 'localhost'
